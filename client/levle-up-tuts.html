@@ -1,0 +1,38 @@
+<head>
+  <title>levle-up-tuts</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <h1 id="hello">Meteor Training Course</h1>
+      <div class="nav">
+        <ul>
+          <li class="first">Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+          <li class="last">Lore</li>
+        </ul>
+      </div>
+      <p class="alert">This is an alert class applied to me</p>
+  </div>
+    <br />
+    <div class="red">
+      <p class="inline">user#roger@mac.net:</p>
+      <input type="text" name="movie-input" class="hack" id="movieInput" size="40" placeholder="enter best movie" />
+      <ul>
+        {{#each rendered}}
+            {{> funtemplate}}
+        {{else}}
+            <p>No data!</p>
+        {{/each}}
+      </ul>
+    </div>
+
+</body>
+
+<template name="funtemplate">
+  <li class="movie-line">{{title}}: {{createdAt}}</li>
+  <li class="hidden"><input type="text" id="updatefield" /></li>
+</template>

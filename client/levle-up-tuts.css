@@ -1,0 +1,143 @@
+/* CSS declarations go here */
+@font-face {
+  font-family: 'minisystem';
+  src: url('fonts/minisystem.otf');
+}
+
+body {
+  background-image: url('http://freehdw.com/wallpapers/hacker-computer-sadic-dark-anarchy-background-images.jpg');
+  background-size: 90%;
+  background-repeat: repeat;
+  margin: 0;
+}
+
+h1 {
+  color: #ddd;
+  font-size: 48px;
+  text-align: center;
+  font-family: 'minisystem';
+  /*text-decoration: line-through;*/
+}
+
+p {
+  font-size: 10px;
+  color: #fff;
+  text-align: left;
+  /*text-decoration: underline;*/
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+li {
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+li.hidden {
+  display: none;
+}
+
+li.show {
+  display: block;
+}
+
+a:hover {
+  background: red;
+}
+
+a:active {
+  background: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav ul{
+  list-style: none;
+  color: white;
+}
+
+.nav li {
+  display: inline;
+  padding-left: 30px;
+}
+
+.subtitle {
+  font-weight: 100;
+  color: #ccc;
+  text-align: center;
+}
+
+.alert {
+  font-family: helvetica, sans-serif;
+  font-variant: small-caps;
+  color: red;
+}
+
+p.alert {
+  font-size: 16px;
+}
+
+p.inline {
+  display: inline;
+  width: 60px;
+}
+
+#hello {
+  font-style: italic;
+}
+
+input.hack {
+  outline: none;
+  color: #eee;
+}
+
+.logo a{
+  display: block;
+  width: 287px;
+  height: 100px;
+  background-image: image();
+  text-indent: -9999px;
+  /*image replacement moves the text away and you just set the link and background image*/
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 200px;
+  margin: 50px auto 50px auto;
+  width: 70%;
+  max-width: 800px;
+  min-width: 400px;
+  border: 1px dashed #333;
+  padding: 10px;
+}
+
+.red {
+  width: 30%;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 200px;
+  margin: 50px auto 50px auto;
+  max-width: 800px;
+  min-width: 400px;
+  border: 1px dashed #333;
+  padding: 10px;
+}
+
+.example {
+  visibility: hidden;
+  display: inline-block
+}
+
+.box {
+
+}
+
+#movieInput {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline;
+  border: none;
+}
