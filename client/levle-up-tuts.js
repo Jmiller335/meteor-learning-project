@@ -23,6 +23,22 @@ Template.body.events({
      }
   },
 
+  "change #piclink": function(event){
+    console.log('pic link change happened');
+    var url = $( '#piclink' ).val();
+    console.log(url + 'this is the variable of link');
+
+    Meteor.call("getPicture", url, function(error, result){
+      if(error){
+        console.log("error", error);
+      }
+      if(result){
+         console.log(result);
+      }
+    });
+
+  },
+
   "dblclick .movie-line": function(event){
     console.log('event fired');
     CoolDatabase.remove(this._id);
@@ -43,6 +59,7 @@ Template.body.events({
   }
 
 });
+
 
 
 // Template.body.events({
